@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Practice Hours — Support</title>
+<meta name="description" content="Support and help for Practice Hours, a supervised driving log for parents.">
+<style>
+  :root {
+    --deep:#0B3D91; --blue:#2A6FD6; --sky:#539CF4; --amber:#FFB020;
+    --night:#7268EA; --ink:#15191F; --muted:#5B6473; --line:#E4E8EF; --bg:#F7F9FC;
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    overflow-wrap:break-word;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:0 20px 56px; }
+  header {
+    background:linear-gradient(135deg,var(--deep),var(--blue));
+    color:#fff; padding:clamp(36px,9vw,56px) 20px clamp(30px,8vw,48px); text-align:center;
+  }
+  .icon {
+    width:clamp(68px,18vw,84px); height:clamp(68px,18vw,84px);
+    margin:0 auto 16px; border-radius:21px;
+    background:rgba(255,255,255,.16); display:flex; align-items:center; justify-content:center;
+    border:1px solid rgba(255,255,255,.25);
+  }
+  .icon svg { width:55%; height:55%; }
+  header h1 { margin:0 0 6px; font-size:clamp(25px,6.5vw,30px); letter-spacing:-.5px; }
+  header p { margin:0; color:#fff; opacity:.86; font-size:clamp(15px,4vw,17px); }
+  h2 { font-size:19px; margin:36px 0 10px; letter-spacing:-.2px; }
+  h3 { font-size:16px; margin:22px 0 4px; }
+  p, li { color:var(--muted); }
+  p { margin:0 0 12px; }
+  ul { margin:0 0 12px; padding-left:22px; }
+  a { color:var(--blue); }
+  .card {
+    background:#fff; border:1px solid var(--line); border-radius:16px;
+    padding:20px 22px; margin:22px 0;
+  }
+  .contact { text-align:center; }
+  .contact a.btn {
+    display:inline-block; max-width:100%; margin-top:8px;
+    padding:14px 26px; border-radius:13px;
+    background:linear-gradient(135deg,var(--sky),var(--blue));
+    color:#fff; text-decoration:none; font-weight:600;
+    word-break:break-word;
+  }
+  .note {
+    border-left:3px solid var(--amber); background:#FFF9EC;
+    padding:12px 16px; border-radius:0 10px 10px 0; margin:18px 0;
+  }
+  .note p { color:#6B5520; margin:0; }
+  footer {
+    border-top:1px solid var(--line); margin-top:48px; padding-top:18px;
+    font-size:13.5px; color:var(--muted); text-align:center;
+  }
+  footer a { display:inline-block; padding:8px 10px; }
+
+  @media (max-width:430px) {
+    .wrap { padding:0 16px 48px; }
+    header { padding-left:16px; padding-right:16px; }
+    .card { padding:18px 16px; border-radius:14px; }
+    .contact a.btn { display:block; padding:14px 18px; }
+    .note { padding:12px 14px; }
+    h2 { margin-top:30px; }
+    /* stack footer links so each is a comfortable tap target */
+    footer .sep { display:none; }
+    footer a { display:block; padding:10px 0; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="icon" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="#fff">
+      <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 2.4a7.6 7.6 0 0 1 7.27 5.4H4.73A7.6 7.6 0 0 1 12 4.4Zm0 5.45a2.15 2.15 0 1 1 0 4.3 2.15 2.15 0 0 1 0-4.3Zm-7.5 2.55h3.2a4.55 4.55 0 0 0 2.9 4.2l-1.1 2.85a7.62 7.62 0 0 1-5-7.05Zm10.9 7.05-1.1-2.85a4.55 4.55 0 0 0 2.9-4.2h3.2a7.62 7.62 0 0 1-5 7.05Z"/>
+    </svg>
+  </div>
+  <h1>Practice Hours</h1>
+  <p>A supervised driving log for parents.</p>
+</header>
+
+<div class="wrap">
+
+  <div class="card contact">
+    <h2 style="margin-top:0">Need help?</h2>
+    <p>Email me directly. I read every message and usually reply within two business days.</p>
+    <a class="btn" href="mailto:sidfender27@gmail.com?subject=Practice%20Hours%20support">sidfender27@gmail.com</a>
+  </div>
+
+  <h2>Frequently asked</h2>
+
+  <h3>The widget shows zeros but the app shows hours.</h3>
+  <p>Remove the widget and add it back. iOS rate-limits how often widgets refresh, so a
+     freshly installed widget can lag behind the app by a few minutes.</p>
+
+  <h3>I forgot to press Start. Can I still log the drive?</h3>
+  <p>Yes. Open the <strong>Log</strong> tab and tap <strong>+</strong> to enter the drive by
+     hand — set the start time, end time, and whether it was a night drive.</p>
+
+  <h3>I pressed Stop an hour late.</h3>
+  <p>Tap the drive in the Log tab and correct the end time. The totals recalculate immediately.
+     Drives over four hours also show a warning when you stop them, as a prompt to check.</p>
+
+  <h3>How does the app decide a drive was at night?</h3>
+  <p>By the clock only. A drive starting after your night cutoff — 8:00 PM by default,
+     changeable in Settings — or before 5:00 AM is <em>suggested</em> as a night drive.
+     You confirm or correct the flag before it saves. The app does not use your location,
+     the motion sensors, or sunset data.</p>
+
+  <h3>Does a drive that crosses midnight count twice?</h3>
+  <p>No. It stays one drive, filed under the day it began, and the Log shows
+     &ldquo;(next day)&rdquo; next to the end time.</p>
+
+  <h3>What happens if the app closes mid-drive?</h3>
+  <p>Nothing is lost. The timer is computed from the saved start instant rather than a
+     running counter, so force-quitting the app, restarting the phone, or letting the
+     battery die all leave the elapsed time correct when you reopen it.</p>
+
+  <h3>How do I get the log to the DMV?</h3>
+  <p>Tap <strong>Share Log</strong> on the Log tab. You get a formatted text file you can
+     print and a CSV you can open in a spreadsheet, both with totals already summed.</p>
+
+  <h3>Where is my data stored? Can I get it back if I delete the app?</h3>
+  <p>Everything is stored on your device only. There is no account and no cloud backup,
+     so deleting the app deletes the log. Export it with Share Log before you do.</p>
+
+  <h3>Can I track more than one teen?</h3>
+  <p>Yes. Add a second driver in Settings. Each driver keeps their own drives, their own
+     hour goals, and their own exported log.</p>
+
+  <div class="note">
+    <p><strong>Please don't use this app while driving.</strong> Practice Hours is built for the
+       supervising adult in the passenger seat. Start and stop the timer while the car is
+       parked. The person behind the wheel should never handle the phone.</p>
+  </div>
+
+  <h2>About the hour requirements</h2>
+  <p>Practice Hours is an independent app. It is not affiliated with, endorsed by, or
+     certified by any DMV, state agency, or licensing authority. Supervised-driving
+     requirements vary by state and change over time — check your own state's rules for the
+     number of hours you need and the form they expect.</p>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> <span class="sep">·</span>
+    <a href="terms.html">Terms of Use</a> <span class="sep">·</span>
+    <a href="mailto:sidfender27@gmail.com">Contact</a>
+    <p style="margin-top:14px">© 2026 Mikalai Zaleski</p>
+  </footer>
+
+</div>
+</body>
+</html>
